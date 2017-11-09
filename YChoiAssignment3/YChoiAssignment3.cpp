@@ -14,17 +14,16 @@ using namespace std;
 int main()
 {
 
-	char id = 'y';
 	Savings s;
 	Checking c;
 	CD cd;
 
 	//Started a pointer and set to NULL
+	
 	GeneralAccount *pGA = NULL;
-
-
-
+	
 	//Displays Checking acount
+
 	cout << "New Checking Account Created" << endl;
 	cout << endl;
 	pGA = new Checking();
@@ -54,7 +53,7 @@ int main()
 	cout << "Monthly Interest for Savings Account" << endl;
 	cout << endl;
 
-	//Shows interest in one month from savings account
+	//Interest in one month from savings account
 	s.Input();
 	s.MonthlyInterest(6000);
 	s.Display();

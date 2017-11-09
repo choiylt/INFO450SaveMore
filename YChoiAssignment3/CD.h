@@ -7,12 +7,7 @@ class CD : public GeneralAccount
 
 private:
 
-	//Defines early withdrawl amount
-
 	int withdraw;
-
-	//Defines the number of terms
-
 	int term;
 
 public:

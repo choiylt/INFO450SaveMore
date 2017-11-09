@@ -5,12 +5,7 @@ class Savings : public GeneralAccount
 {
 private:
 
-	//The amount withdrawn from the account
-
 	int withdraw;
-
-	//The Amount of interest gained per month.
-
 	double interestGained;
 
 public:

@@ -44,22 +44,22 @@ double CD::MonthlyInterest(int t)
 {
 	//CD interest
 
-	double ci;
+	double inte;
 
 	if (t >= 5)
 	{
-		ci = 0.10;
+		inte = 0.10;
 	}
 	else
 	{
-		ci = 0.05;
+		inte = 0.05;
 	}
 
 	//Make interest rate monthly
 
-	ci = ci / 12;
+	inte = inte / 12;
 
-	balance += balance*ci;
+	balance += balance*inte;
 
 	return balance;
 }
@@ -70,7 +70,7 @@ double CD::WithdrawCD(int w)
 	if (w > 0)
 
 	{
-		//Updates balance with withdrawl amount plus fee subtracted
+		//Show the balance with the withdrawl amount in addition to the fee
 
 		balance = balance - w*1.1;
 	}

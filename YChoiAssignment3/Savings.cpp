@@ -31,32 +31,32 @@ void Savings::Input()
 
 double Savings::MonthlyInterest(double sb)
 {
-	double si;
+	double mi;
 
 	if (sb >= 10000)
 	{
-		si = 0.02;
+		mi = 0.02;
 	}
 	else
 	{
-		si = 0.01;
+		mi = 0.01;
 	}
 
 	//Breaks yearly interest to monthly
 
-	si = si / 12;
+	mi = mi / 12;
 
 	//Interest gained 
 
-	sb = sb*si;
+	sb = sb*mi;
 
 	//Returns the updated balance
 
-	balance += balance * si;
+	balance += balance * mi;
 
 	return balance;
 	return sb;
-	return si;
+	return mi;
 }
 
 //Calculates the new balance after taking out of Savings
